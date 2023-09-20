@@ -1,0 +1,155 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.random{
+    padding: 1%;
+    float: right;
+    color: #333333;
+    padding-right: 3%;
+}
+
+.random p{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.container .container-text{
+    width: 600px;
+    height: 200px;
+}
+
+.container .container-text p{
+    padding: 2%;
+    font-size: 24px;
+    padding-left: 8%;
+    text-align: justify;
+    border-left: 10px solid #F8E3A1;
+}
+
+.container-author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-author .container-author-text{
+    width: 600px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container-author .container-author-text p{
+    font-size: 24px;
+    padding-left: 8%;
+    padding-right: 0%;
+    text-align: left;
+}
+
+.container-author .container-author-text .author-name{
+    color: #4f4f4f;
+    margin-top: 6%
+}
+
+.container-author .container-author-text .goTo{
+    padding: 2%;
+    color: white;
+    float: right;
+}
+
+.container-author .container-author-text .author-genre{
+    color: #848484;
+    font-size: 16px;
+}
+
+.container-author .container-author-text:hover{
+    background-color: #333333;
+}
+
+.container-author .container-author-text:hover > p{
+    color: white;
+    background-color: #333333;
+}
+
+.author-notes{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: left;
+    padding: 20px;
+}
+
+.author-notes h1{
+    font-size: 32px;
+}
+
+.author-notes .author-notes-quote{
+    width: 600px;
+    height: 200px;
+}
+
+.author-notes .author-notes-quote p{
+    margin-top: 15%;
+    padding: 2%;
+    font-size: 24px;
+    padding-left: 8%;
+    text-align: justify;
+    border-left: 10px solid #F8E3A1;
+}
+
+@media screen and (max-width: 450px){
+
+    .container{
+        height: 80vh;
+    }
+
+    .container .container-text p{
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .container-author .container-author-text{
+        width: 300px;
+        height: 120px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .container-author .container-author-text p{
+        font-size: 24px;
+    }
+
+    .author-notes{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: left;
+        padding: 0%;
+    }
+
+    .author-notes h1{
+        margin-top: 10%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .author-notes .author-notes-quote{
+        width: 300px;
+        height: 120px;
+    }
+
+    .author-notes .author-notes-quote p{
+        width: 100%;
+        height: 120px;
+        font-size: 16px;
+    }
+}
